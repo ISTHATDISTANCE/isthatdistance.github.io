@@ -70,52 +70,54 @@ content:
     content:
       - layout: left
         title: Optimizing Federated Learning via Diverse Model Achitectures
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        # link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        # link_text: Link Text
+        # additional_links:
+        #   - title:  Github page for project (eg. sproogen/modern-resume-theme)
+        #     icon: fab fa-github
+        #     url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        #   - title:  Github page for project (eg. sproogen/modern-resume-theme)
+        #     icon: fab fa-github
+        #     url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         quote: >
-          Short overview of the project (optional)
+          EECS 545 Machine Learning course project
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+          Allows FL customizes model training based on heterogeneous client conditions
       - layout: left
         title: Super resolution
   - title: Experience
     layout: list
     content:
       - layout: left
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
-        quote: >
-          Short description of the company (optional)
+        title: SJTU
+        sub_title: Writing consultant
+        caption: September 2020 - present
+        # link: Link to company (optional)
+        # quote: >
+        #   Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
-          Description of role
+          Help student with their paperwork, i.e. course essay, application materials.
   - title: Education
     layout: list
     content:
-      - layout: top-left
+      - layout: top-right
         title: Shanghai Jiao Tong Univeristy
         sub_title: BSE Electric and Computer Engineering
-        caption: 2019-2023
-      - layout: top-left
+        caption: 2019-2023 (expected)
+      - layout: top-right
         title: University of Michigan
         sub_title: BSE Computer Science
-        caption: 2021-2023
+        caption: 2021-2023 (expected)
         # description: | # this will include new lines to allow paragraphs
         #   Description of qualification
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+      I am currently a CS undergraduate studying in Univeristy of Michigan (UM). I am enrolled in dual degree program held by Shanghai Jiao Tong University (SJTU) and UM.
 
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+      My research interests include: operating system and web development.
+
+      My technical skills include: C/C++, Python (numpy, pytorch, flask), LaTex, HTML, CSS, JavaScript, React, Shell Script, Git.
 
 # Footer
 footer_show_references: true
