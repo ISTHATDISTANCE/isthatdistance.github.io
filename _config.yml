@@ -67,7 +67,7 @@ content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: right
+      - layout: left
         title: Optimizing Federated Learning via Diverse Model Achitectures
         caption: April 2022 - present
         # link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
@@ -83,14 +83,14 @@ content:
           EECS 545 Machine Learning course project
         description: | # this will include new lines to allow paragraphs
           Allows FL customizes model training based on heterogeneous client conditions.
-      - layout: right
+      - layout: left
         title: Super resolution
         caption: April 2022 - present
         quote: >
           EECS 442 Computer vision course project
         description: |
           Upscales low-resolution images to high-resolution using deep neural network.
-      - layout: right
+      - layout: left
         title: SafeSJTU
         caption: March 2021 - August 2021
         quote: >
@@ -101,7 +101,7 @@ content:
   - title: Experience
     layout: list
     content:
-      - layout: right
+      - layout: left
         title: Resaerch consultant
         sub_title: Shanghai Jiao Tong University
         caption: September 2020 - present
@@ -110,7 +110,7 @@ content:
         #   Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
           Advised by Prof. Dongyao Chen.
-      - layout: right
+      - layout: left
         title: Writing consultant
         sub_title: Shanghai Jiao Tong University
         caption: September 2020 - present
@@ -119,7 +119,7 @@ content:
         #   Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
           Help student with their paperwork, i.e. course essay, application materials.
-      - layout: right
+      - layout: left
         title: Teach assistant
         sub_title: Shanghai Jiao Tong University
         caption: May 2020 - August 2021
