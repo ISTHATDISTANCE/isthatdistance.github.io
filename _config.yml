@@ -63,13 +63,13 @@ about_content: |
 #     - Tables
 #     - <a href="google.com">Links</a>
 #     - Images ![alt text](/images/landscape-trees.jpg "Trees")
-
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: left
+      - layout: right
         title: Optimizing Federated Learning via Diverse Model Achitectures
+        caption: April 2022 - present
         # link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         # link_text: Link Text
         # additional_links:
@@ -82,31 +82,62 @@ content:
         quote: >
           EECS 545 Machine Learning course project
         description: | # this will include new lines to allow paragraphs
-          Allows FL customizes model training based on heterogeneous client conditions
-      - layout: left
+          Allows FL customizes model training based on heterogeneous client conditions.
+      - layout: right
         title: Super resolution
+        caption: April 2022 - present
+        quote: >
+          EECS 442 Computer vision course project
+        description: |
+          Upscales low-resolution images to high-resolution using deep neural network.
+      - layout: right
+        title: SafeSJTU
+        caption: March 2021 - August 2021
+        quote: >
+          Research project advised by Prof. Dongyao Chen.
+        description: | # this will include new lines to allow paragraphs
+          An app on Wechat working with OBD system on eletric cars in SJTU
+          Track driver's behavior by collecting non-private data.
   - title: Experience
     layout: list
     content:
-      - layout: left
-        title: SJTU
-        sub_title: Writing consultant
+      - layout: right
+        title: Resaerch consultant
+        sub_title: Shanghai Jiao Tong University
+        caption: September 2020 - present
+        # link: Link to company (optional)
+        # quote: >
+        #   Short description of the company (optional)
+        description: | # this will include new lines to allow paragraphs
+          Advised by Prof. Dongyao Chen.
+      - layout: right
+        title: Writing consultant
+        sub_title: Shanghai Jiao Tong University
         caption: September 2020 - present
         # link: Link to company (optional)
         # quote: >
         #   Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
           Help student with their paperwork, i.e. course essay, application materials.
+      - layout: right
+        title: Teach assistant
+        sub_title: Shanghai Jiao Tong University
+        caption: May 2020 - August 2021
+        description: |
+          Courses:
+            VM 450, major design experience;
+            VY 200, academic writing II;
+            VX 310, Cross culture communication.
   - title: Education
     layout: list
     content:
       - layout: top-right
         title: Shanghai Jiao Tong Univeristy
-        sub_title: BSE Electric and Computer Engineering
+        sub_title: BS, Electric and Computer Engineering
         caption: 2019-2023 (expected)
       - layout: top-right
         title: University of Michigan
-        sub_title: BSE Computer Science
+        sub_title: BS, Computer Science
         caption: 2021-2023 (expected)
         # description: | # this will include new lines to allow paragraphs
         #   Description of qualification
