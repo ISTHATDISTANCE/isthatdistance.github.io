@@ -69,7 +69,7 @@ content:
     content:
       - layout: left
         title: Optimizing Federated Learning via Diverse Model Achitectures
-        caption: April 2022 - present
+        caption: January 2022 - present
         # link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         # link_text: Link Text
         # additional_links:
@@ -85,7 +85,7 @@ content:
           Allows FL customizes model training based on heterogeneous client conditions.
       - layout: left
         title: Super resolution
-        caption: April 2022 - present
+        caption: January 2022 - present
         quote: >
           EECS 442 Computer vision course project
         description: |
@@ -102,7 +102,7 @@ content:
     layout: list
     content:
       - layout: left
-        title: Resaerch consultant
+        title: Research consultant
         sub_title: Shanghai Jiao Tong University
         caption: September 2020 - present
         # link: Link to company (optional)
