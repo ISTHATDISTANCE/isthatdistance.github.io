@@ -90,7 +90,7 @@ content:
         quote: >
           EECS 442 Computer vision course project
         description: |
-          Upscales low-resolution images to high-resolution using deep neural network.
+          Upscales low-resolution images to high-resolution using our ECDN.
       - layout: left
         title: SafeSJTU
         caption: March 2021 - August 2021
