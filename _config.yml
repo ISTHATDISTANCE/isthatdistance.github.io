@@ -84,8 +84,9 @@ content:
         description: | # this will include new lines to allow paragraphs
           Allows FL customizes model training based on heterogeneous client conditions.
       - layout: left
-        title: Super resolution
+        title: Efficient Cascading Dense Network for Super resolution
         caption: January 2022 - present
+        link: https://github.com/ISTHATDISTANCE/ECDN
         quote: >
           EECS 442 Computer vision course project
         description: |
