@@ -68,8 +68,23 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        title: Android Screentime Usability App
+        caption: May 2022 - present
+        quote: >
+          Advised by Prof. Anhong Guo in University of Michigan
+        description:
+          To be added.
+      - layout: left
+        title: Efficient Cascading Dense Network for Super resolution
+        caption: January 2022 - April 2022
+        link: https://github.com/ISTHATDISTANCE/ECDN
+        quote: >
+          EECS 442 Computer vision course project
+        description: |
+          Upscales low-resolution images to high-resolution using our ECDN.
+      - layout: left
         title: Optimizing Federated Learning via Diverse Model Achitectures
-        caption: January 2022 - present
+        caption: January 2022 - April 2022
         # link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         # link_text: Link Text
         # additional_links:
@@ -83,14 +98,6 @@ content:
           EECS 545 Machine Learning course project
         description: | # this will include new lines to allow paragraphs
           Allows FL customizes model training based on heterogeneous client conditions.
-      - layout: left
-        title: Efficient Cascading Dense Network for Super resolution
-        caption: January 2022 - present
-        link: https://github.com/ISTHATDISTANCE/ECDN
-        quote: >
-          EECS 442 Computer vision course project
-        description: |
-          Upscales low-resolution images to high-resolution using our ECDN.
       - layout: left
         title: SafeSJTU
         caption: March 2021 - August 2021
