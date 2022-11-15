@@ -111,14 +111,23 @@ content:
     layout: list
     content:
       - layout: left
-        title: Research consultant
-        sub_title: Shanghai Jiao Tong University
-        caption: September 2020 - present
+        title: Research assistant
+        sub_title: University of Michigan, Ann Arbor
+        caption: May 2022 - present
         # link: Link to company (optional)
-        # quote: >
-        #   Short description of the company (optional)
+        quote: >
+          Advised by Prof. Anhong Guo.
         description: | # this will include new lines to allow paragraphs
+            Human-Computer Interaction and human wellbeing.
+      - layout: left
+        title: Research assistant
+        sub_title: Shanghai Jiao Tong University
+        caption: September 2020 - September 2021
+        # link: Link to company (optional)
+        quote: >
           Advised by Prof. Dongyao Chen.
+        description: | # this will include new lines to allow paragraphs
+            Mobile sensing and cyber-physical systems.
       - layout: left
         title: Writing consultant
         sub_title: Shanghai Jiao Tong University
