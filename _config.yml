@@ -74,8 +74,9 @@ content:
           Tao Lu, Tianying Zhang, Hongxiao Zheng, Xuhai Xu, Anhong Guo; currently in submission of CHI 2023
         description:
           InteractOut is a tool that leverages Interaction Proxies as input manipulation strategies for reducing smartphone overuse
-          
-          <a href="https://github.com/ISTHATDISTANCE/InteractOut">Links</a>
+
+
+          <a href="https://github.com/ISTHATDISTANCE/InteractOut">Project Repo</a>
       - layout: left
         title: Efficient Cascading Dense Network for Super resolution
         caption: January 2022 - April 2022
@@ -146,7 +147,9 @@ content:
           Courses:
 
             VM 450, major design experience;
+
             VY 200, academic writing II;
+
             VX 310, Cross culture communication.
   - title: Education
     layout: list
