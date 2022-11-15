@@ -68,12 +68,12 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: "InteractOut: Leveraging Interaction Proxies as Input Manipulation Strategies for Reducing Smartphone Overuse"
+        title: "InteractOut: "
         caption: May 2022 - present
         quote: >
-          Advised by Prof. Anhong Guo in University of Michigan; currently in submission of CHI 2023
+          Tao Lu, Tianying Zhang, Hongxiao Zheng, Xuhai Xu, Anhong Guo; currently in submission of CHI 2023
         description:
-          To be added.
+          InteractOut is a tool that leverages Interaction Proxies as input manipulation strategies for reducing smartphone overuse
         link: https://github.com/ISTHATDISTANCE/InteractOut
       - layout: left
         title: Efficient Cascading Dense Network for Super resolution
