@@ -146,11 +146,9 @@ content:
         description: |
           Courses:
 
-            VM 450, major design experience;
-
-            VY 200, academic writing II;
-
-            VX 310, Cross culture communication.
+            - VM 450, major design experience;
+            - VY 200, academic writing II;
+            - VX 310, Cross culture communication.
   - title: Education
     layout: list
     content:
