@@ -68,12 +68,13 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Android Screentime Usability App
+        title: "InteractOut: Leveraging Interaction Proxies as Input Manipulation Strategies for Reducing Smartphone Overuse"
         caption: May 2022 - present
         quote: >
-          Advised by Prof. Anhong Guo in University of Michigan
+          Advised by Prof. Anhong Guo in University of Michigan; currently in submission of CHI 2023
         description:
           To be added.
+        link: https://github.com/ISTHATDISTANCE/InteractOut
       - layout: left
         title: Efficient Cascading Dense Network for Super resolution
         caption: January 2022 - April 2022
