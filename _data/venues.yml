@@ -7,3 +7,11 @@
 
 "Vision":
   color: "#009f36"
+
+"CHI":
+  url: https://dl.acm.org/conference/chi
+  color: "#d53247"
+  
+"VIS":
+  url: https://ieeevis.org/
+  color: "#3f657f"
