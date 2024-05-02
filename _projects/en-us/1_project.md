@@ -1,82 +1,100 @@
 ---
-page_id: project_1
+page_id: ECDN
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Image Super Resolution using Efficient Cascade Dense Network (ECDN)
+description: 
+img: 
 importance: 1
-category: work
+category: "big"
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# Efficient Cascading Dense Network
+Tao Lu, Siyuan Xu, Tianyue Li.<br>
+EECS 442 course project, WN22. [full report](https://isthatdistance.github.io/assets/pdf/EECS442_Final_Report.pdf)
+<br>
+Works on: amhyuk Ahn, Byungkon Kang, and Kyung-Ah Sohn. Fast, accurate, and lightweight super-resolution with cascading residual network. In Proceedings of the European conference on computer vision (ECCV), pages 252–268, 2018.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+### Abstract
+We build our Efficient Cascading Dense Network (ECDN) mainly on CARN. We choose this method because compared with other CNN for SR task, CARN achieved a more ideal balance between the training speed and accuracy. 
+But still, CARN is not so effective. It requires more than 4 GPU-days to reach a good performance. Also, their parameter size is too large and can be reduced while preserving the performance to the large extent. Our ECDN, as well as its slimmer version, ECDN_M, achieves its performance with almost half of the original parameters.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Requirements
+- Python 3
+- [PyTorch](https://github.com/pytorch/pytorch) (0.4.0), [torchvision](https://github.com/pytorch/vision)
+- Numpy, Scipy
+- Pillow, Scikit-image
+- h5py
+- importlib
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+### Dataset
+We use DIV2K dataset for training and Set5, Set14, B100 and Urban100 dataset for the benchmark test. Here are the following steps to prepare datasets.
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+1. Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K) and unzip on `dataset` directory as below:
+  ```
+  dataset
+  └── DIV2K
+      ├── DIV2K_train_HR
+      ├── DIV2K_train_LR_bicubic
+      ├── DIV2K_valid_HR
+      └── DIV2K_valid_LR_bicubic
+  ```
+2. To accelerate training, we first convert training images to h5 format as follow (h5py module has to be installed).
+```shell
+$ cd datasets && python div2h5.py
 ```
 
-{% endraw %}
+### Test Pretrained Models
+We provide the pretrained models in `checkpoint` directory. To test CARN on benchmark dataset:
+```shell
+$ python carn/sample.py --model carn \
+                        --test_data_dir dataset/<dataset> \
+                        --scale [2|3|4] \
+                        --ckpt_path ./checkpoint/<path>.pth \
+                        --sample_dir <sample_dir>
+```
+and for CARN-M,
+```shell
+$ python carn/sample.py --model carn_m \
+                        --test_data_dir dataset/<dataset> \
+                        --scale [2|3|4] \
+                        --ckpt_path ./checkpoint/<path>.pth \
+                        --sample_dir <sample_dir> \
+                        --group 4
+```
+
+### Training Models
+Here are our settings to train ECDN and ECDN-M. Note: We use two GPU to utilize large batch size, but if OOM error arise, please reduce batch size.
+```shell
+# For ECDN
+$ python carn/train.py --patch_size 64 \
+                       --batch_size 64 \
+                       --max_steps 600000 \
+                       --decay 400000 \
+                       --model ecdn \
+                       --ckpt_name ecdn \
+                       --ckpt_dir checkpoint/ecdn \
+                       --scale 0 \
+                       --num_gpu 2 \
+                       --group 4
+# For ECDN-M
+$ python carn/train.py --patch_size 64 \
+                       --batch_size 64 \
+                       --max_steps 600000 \
+                       --decay 400000 \
+                       --model ecdn_m \
+                       --ckpt_name ecdn_m \
+                       --ckpt_dir checkpoint/ecdn_m \
+                       --scale 0 \
+                       --group 4 \
+                       --num_gpu 2 \
+                       --loss_fn SmoothL1
+```
+In the `--scale` argument, [2, 3, 4] is for single-scale training and 0 for multi-scale learning. `--group` represents group size of group convolution. The differences from previous version are: 1) we increase batch size and patch size to 64 and 64. 2) Instead of using `reduce_upsample` argument which replace 3x3 conv of the upsample block to 1x1, we use group convolution as same way to the efficient residual block.
+
+### Results
+<img src="/assets/img/ECDN/mytable.png">
+<img src="/assets/img/ECDN/fig1.png">
+<img src="/assets/img/ECDN/fig2.png">
+<img src="/assets/img/ECDN/fig3.png">
+

@@ -26,3 +26,5 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 My research interest is to study how to extend human's ability or increase their performance and engagement on a wide range of **tasks** through different **environments**. My goal is to <ins>design interactions that maximize the power of the environment and minimize the difficulty of the task.</ins> The environments I touched in my past research are primarily *extended reality* and *mobile platforms*, and some tasks I have been working on are *data visualization* and *data collections*.
+
+In the future, I'm going to approach my goal by exploring how **algorithms** can be incorporated in the environment to support more personalized and situated interactions.

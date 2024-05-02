@@ -8,7 +8,7 @@ middle_name:
 last_name: （陆韬）
 email: luttul@gatech.edu
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: "profile.jpg" # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://isthatdistance.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -220,6 +220,7 @@ exclude:
   - vendor
   - _pages/en-us/profiles.md
   - _pages/en-us/dropdown.md
+  - _pages/en-us/projects.md
 keep_files:
   - CNAME
   - .nojekyll
