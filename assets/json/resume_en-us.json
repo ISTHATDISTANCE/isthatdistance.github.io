@@ -48,7 +48,24 @@
       "score": "8"
     }
   ],
-  
+  "work": [
+    {
+      "name": "Georgia Institute of Technology",
+      "position": "Graduate Teaching Assistant",
+      "startDate": "2024-01",
+      "endDate": "2024-04",
+      "summary": "Human-AI Interaction by Prof. Christopher J. MacLellan",
+      "highlights": []
+    },
+    {
+      "name": "University of Michigan",
+      "position": "Undergraduate Research Assistant",
+      "startDate": "2022-04",
+      "endDate": "2023-05",
+      "summary": "Advised by Dr. Anhong Guo on interactions on mobile devices",
+      "highlights": []
+    }
+  ],
   "publications": [
     {
       "name": "InteractOut: Leveraging Interaction Proxies as Input Manipulation Strategies for Reducing Smartphone Overuse",
