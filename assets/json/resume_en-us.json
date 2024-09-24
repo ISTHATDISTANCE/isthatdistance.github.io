@@ -52,6 +52,14 @@
     {
       "name": "Georgia Institute of Technology",
       "position": "Graduate Teaching Assistant",
+      "startDate": "2024-08",
+      "endDate": "2024-12",
+      "summary": "Introduction to Information Visualization by Prof. Yalong Yang",
+      "highlights": []
+    },
+    {
+      "name": "Georgia Institute of Technology",
+      "position": "Graduate Teaching Assistant",
       "startDate": "2024-01",
       "endDate": "2024-04",
       "summary": "Human-AI Interaction by Prof. Christopher J. MacLellan",
@@ -69,7 +77,7 @@
   "publications": [
     {
       "name": "InteractOut: Leveraging Interaction Proxies as Input Manipulation Strategies for Reducing Smartphone Overuse",
-      "publisher": "Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems",
+      "publisher": "Proceedings of the ACM Conference on Human Factors in Computing Systems",
       "authors": "Tao Lu",
       "releaseDate": "2024",
       "url": "/assets/pdf/InteractOut.pdf",
@@ -77,26 +85,26 @@
     },
     {
       "name": "CompositingVis: Exploring Interactions for Creating Composite Visualizations in Immersive Environments",
-      "publisher": "In Submission to IEEE VIS, Under Review",
+      "publisher": "IEEE Visualization and Visual Analytics",
       "releaseDate": "2024",
       "summary": "Qian Zhu, Tao Lu, Shunan Guo, Xiaojuan Ma, Yalong Yang"
     }
   ],
   "projects": [
     {
-      "name": "Understanding Prespective Change in Immersive Data Storytelling with Spatial Context",
-      "summary": "We simulated spatial-related data storytelling in Virual Reality (VR) using Unity3D game engine and compared active vs. passive reader perspective change in story progress control.",
-      "highlights": ["VR", "Immersive Data Storytelling"],
-      "startDate": "2024-04",
-      "endDate": "present",
-      "url": ""
-    },
-    {
       "name": "Civic Dark Patterns in Public Record Portals",
       "summary": "We analyzed and identified dark patterns in some important daily functions on civic websites among counties in Atlanta municipal area.",
       "highlights": ["UX Audit", "Dark Pattern Analysis"],
       "startDate": "2023-10",
-      "endDate": "present",
+      "endDate": "2024-05",
+      "url": ""
+    },
+    {
+      "name": "Teams for Life",
+      "summary": "We developed a community feature on Microsoft Teams to attract and empower vommunity owners to build and grow communities on Teams for daily and recreational use.",
+      "highlights": ["Mobile", "UI"],
+      "startDate": "2023-09",
+      "endDate": "2023-12",
       "url": ""
     },
     {
