@@ -23,6 +23,15 @@
     {
       "institution": "Georgia Institute of Technology",
       "location": "Atlanta, GA, USA",
+      "area": "Computer Science",
+      "studyType": "PhD",
+      "startDate": "2025-08",
+      "endDate": "2030-05",
+      "score": "10"
+    },
+    {
+      "institution": "Georgia Institute of Technology",
+      "location": "Atlanta, GA, USA",
       "area": "Human-Computer Interaction",
       "studyType": "Master",
       "startDate": "2023-08",
@@ -87,7 +96,15 @@
       "name": "CompositingVis: Exploring Interactions for Creating Composite Visualizations in Immersive Environments",
       "publisher": "IEEE Visualization and Visual Analytics",
       "releaseDate": "2024",
+      "url": "/assets/pdf/VIS2024_ImmersiveCompositeVis.pdf",
       "summary": "Qian Zhu, Tao Lu, Shunan Guo, Xiaojuan Ma, Yalong Yang"
+    },
+    {
+      "name": "Ego vs. Exo and Active vs. Passive: Investigating the Effects of Viewpoint and Navigation on Spatial Immersion and Understanding in Immersive Storytelling.",
+      "publisher": "Proceedings of the ACM Conference on Human Factors in Computing Systems",
+      "releaseDate": "2025",
+      "url": "/assets/pdf/CHI25_EXAP.pdf",
+      "summary": "Tao Lu, Qian Zhu, Tiffany Ma, Wong Kam-Kwai, Catherine Xie, Alex Endert, Yalong Yang"
     }
   ],
   "projects": [
