@@ -1,31 +1,7 @@
-{% if site.footer_fixed %}
-  <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0">
-      &copy; Copyright {{ site.time | date: '%Y' }}
-      {{ site.first_name }}
-      {{ site.middle_name }}
-      {{ site.last_name }}. {{ site.data[site.active_lang].strings.footer_text }}
-      {% if site.impressum_path %}
-        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-      {% endif %}
-      {% if site.last_updated %}
-        Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-      {% endif %}
-    </div>
-  </footer>
-{% else %}
-  <footer class="sticky-bottom mt-5" role="contentinfo">
-    <div class="container">
-      &copy; Copyright {{ site.time | date: '%Y' }}
-      {{ site.first_name }}
-      {{ site.middle_name }}
-      {{ site.last_name }}. {{ site.data[site.active_lang].strings.footer_text }}
-      {% if site.impressum_path %}
-        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-      {% endif %}
-      {% if site.last_updated %}
-        Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-      {% endif %}
-    </div>
-  </footer>
-{% endif %}
+<footer class="site-footer">
+  <div class="container footer-content">
+    <p>© {{ site.time | date: '%Y' }} Tao Lu <span lang="zh">陆韬</span></p>
+    <p>Built with <a href="https://jekyllrb.com/">Jekyll</a> &amp; <a href="https://github.com/george-gca/multi-language-al-folio">al-folio</a>.</p>
+    <a href="#main-content">Back to top <span aria-hidden="true">↑</span></a>
+  </div>
+</footer>

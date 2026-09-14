@@ -152,34 +152,19 @@
   "skills": [
     {
       "name": "VR Development",
-      "keywords": [
-        "Unity3D (C#)",
-        "Meta Quest Link",
-        "SteamVR",
-        "Mixed-Reality Recording"
-      ]
+      "keywords": ["Unity3D (C#)", "Meta Quest Link", "SteamVR", "Mixed-Reality Recording"]
     },
     {
       "name": "Mobile Development",
-      "keywords": [
-        "Android (Java+Kotlin)",
-        "IOS (SwiftUI)",
-        "Firebase"
-      ]
+      "keywords": ["Android (Java+Kotlin)", "IOS (SwiftUI)", "Firebase"]
     },
     {
       "name": "Quantitative Data Analysis",
-      "keywords": [
-        "R Script",
-        "Python"
-      ]
+      "keywords": ["R Script", "Python"]
     },
     {
       "name": "Web Development",
-      "keywords": [
-        "React",
-        "D3.js"
-      ]
+      "keywords": ["React", "D3.js"]
     }
   ],
   "awards": [

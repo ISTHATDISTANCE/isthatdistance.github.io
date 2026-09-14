@@ -1,6 +1,8 @@
 // create element for copy button in code blocks
 var codeBlocks = document.querySelectorAll("pre");
 codeBlocks.forEach(function (codeBlock) {
+  // Publication citations provide their own accessible copy control and fallback.
+  if (codeBlock.closest(".research-citation")) return;
   if (
     (codeBlock.querySelector("pre:not(.lineno)") || codeBlock.querySelector("code")) &&
     codeBlock.querySelector("code:not(.language-chartjs)") &&

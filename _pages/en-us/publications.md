@@ -2,15 +2,10 @@
 page_id: publications
 layout: page
 permalink: /publications/
-title: Publications
-description:
+title: Research
+description: Exploring immersive storytelling, embodied interaction, and digital wellbeing.
 nav: true
 nav_order: 2
 ---
 
-<!-- _pages/publications.md -->
-<div class="publications">
-
-{% bibliography %}
-
-</div>
+{% include research-publications.liquid %}

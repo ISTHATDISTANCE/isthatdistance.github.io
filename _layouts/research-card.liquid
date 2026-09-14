@@ -1,0 +1,25 @@
+---
+---
+<a class="work-card work-card-{{ entry.topic }}" href="{{ '/publications/' | relative_url }}#{{ entry.key }}">
+  <div class="work-card-image">
+    {% case entry.key %}
+      {% when 'lu2025egoexoactivepassive' -%}
+        {%- assign cover = '/assets/img/research/immersive-storytelling-cover.webp' %}
+      {% when 'zhu2024compositingvis' -%}
+        {%- assign cover = '/assets/img/research/compositing-vis-cover.webp' %}
+      {% when 'lu2024interactout' -%}
+        {%- assign cover = '/assets/img/research/interactout-cover.webp' %}
+    {% endcase %}
+    <img src="{{ cover | relative_url }}" alt="{{ entry.short_title | escape }} research preview" width="800" height="450" decoding="async">
+    <span class="work-card-venue">
+      {{- entry.abbr }}
+      {{ entry.year -}}
+    </span>
+    <span class="work-card-arrow" aria-hidden="true">↗</span>
+  </div>
+  <div class="work-card-caption">
+    <span class="work-card-topic">{{ entry.topic_label }}</span>
+    <h3>{{ entry.short_title }}</h3>
+    <p>{{ entry.summary }}</p>
+  </div>
+</a>

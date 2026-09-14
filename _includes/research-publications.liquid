@@ -1,0 +1,19 @@
+<section class="research-section" data-research aria-label="Research publications">
+  <div class="research-toolbar">
+    <div class="research-filters" role="group" aria-label="Filter publications by topic" hidden>
+      <button type="button" data-research-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-research-filter="immersive-storytelling" aria-pressed="false">Storytelling</button>
+      <button type="button" data-research-filter="immersive-visualization" aria-pressed="false">Visualization</button>
+      <button type="button" data-research-filter="digital-wellbeing" aria-pressed="false">Digital wellbeing</button>
+    </div>
+    <p class="research-count" role="status" aria-live="polite">All publications</p>
+  </div>
+  <div class="publications research-list">
+    {% if include.group_by == 'year' %}
+      {% bibliography %}
+    {% else %}
+      {% bibliography --group_by none %}
+    {% endif %}
+  </div>
+  <p class="research-empty" hidden>No publications in this topic yet. Choose All to see every publication.</p>
+</section>
