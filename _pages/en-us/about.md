@@ -3,7 +3,7 @@ page_id: about
 layout: about
 title: About
 permalink: /
-description: Tao Lu is a Computer Science PhD student at Georgia Tech researching human-computer interaction, immersive storytelling, and AR/VR.
+description: Tao Lu is a 2nd-year Computer Science PhD student at Georgia Tech researching human-computer interaction, immersive storytelling, and AR/VR.
 ---
 
 I design and study **immersive experiences for storytelling**—exploring how people create, navigate, and understand stories in augmented and virtual reality.
